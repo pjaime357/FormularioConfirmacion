@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: rgb(235, 196, 124);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            color: #ec8d67;
+        }
+        p {
+            font-size: 25px;
+            color: #333;
+        }
+        .button-audio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        audio {
+            height: 40px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Te esperamos!</h1>
+        <p>Nos encantaría que nos acompañes en este día tan especial.</p>
+
+        <div class="image-container">
+            <img src="/imagenes/imagen-2.jpg" alt="Imagen de la boda">
+        </div>
+
+        <p>~06-12-2024~</p>
+
+        <!-- Contenedor con botón y audio alineados -->
+        <div class="button-audio-container">
+            <audio controls>
+                <source src="/audio/viola-cinematic-emotional-storytelling-204156.mp3"audio/mp3">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+
+        <!-- Formulario embebido desde Google Forms -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSduqyDN6V7Voeic_63Nu7IGIJ4e0GzlnZ_qLgttRvGrTrxhUA/viewform?embedded=true">
+            Cargando…
+        </iframe>
+    </div>
+</body>
+</html>
